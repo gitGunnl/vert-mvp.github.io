@@ -5,10 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentation</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the title slide */
+        #title-slide {
+            background-image: url('title_slide_background.png'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #title-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        #title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #subtitle {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #logo {
+            /* Add styles for your company logo */
+            max-width: 200px; /* Adjust the size as needed */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <div id="presentation">
-        <div class="slide" style="background-image: url('slide1.png');"></div>
+        <div id="title-slide" class="slide">
+            <div id="title-content">
+                <div id="title">AI Integration in Architecture: Enhancing Efficiency and Innovation</div>
+                <div id="subtitle">Presented by Tøkni Tænastan</div>
+                <img id="logo" src="your_company_logo.png" alt="Company Logo"> <!-- Replace with your company logo -->
+            </div>
+        </div>
         <div class="slide" style="display: none; background-image: url('slide2.png');"></div>
         <div class="slide" style="display: none; background-image: url('slide3.png');"></div>
         <!-- Additional slides here -->
