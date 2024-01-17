@@ -3,34 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Presentation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Vert MVP website</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About the Chatbot</h2>
-            <p>This is a simple website for testing a chatbot made with Voiceflow.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Deployed with GitHub Pages</p>
-    </footer>
-
-    <script type="text/javascript">
-        (function(d, t) {
-            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-              window.voiceflow.chat.load({
-                verify: { projectID: '6561d52afc460970ea495228' },
-                url: 'https://general-runtime.voiceflow.com',
-                versionID: 'production'
-              });
-            }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-        })(document, 'script');
-      </script>
+    <div id="presentation">
+        <div class="slide" style="background-image: url('slide1.png');"></div>
+        <div class="slide" style="display: none; background-image: url('slide2.png');"></div>
+        <div class="slide" style="display: none; background-image: url('slide3.png');"></div>
+        <!-- Additional slides here -->
+    </div>
+    <button id="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button id="next" onclick="changeSlide(1)">&#10095;</button>
+    <script src="script.js"></script>
 </body>
 </html>
